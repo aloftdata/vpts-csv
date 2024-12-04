@@ -19,7 +19,7 @@ authors:
     family-names: Dokter
     orcid: https://orcid.org/0000-0001-6573-066X
     affiliation: Cornell Lab of Ornithology
-repository-code: https://github.com/enram/vpts-csv
+repository-code: https://github.com/aloftdata/vpts-csv
 url: https://aloftdata.eu/vpts-csv
 date-released: '2023-12-18'
 keywords:
