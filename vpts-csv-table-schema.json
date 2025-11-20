@@ -33,6 +33,15 @@
       }
     },
     {
+      "name": "height_reference",
+      "description": "Reference height relative to which the profile height bins are defined, one of `sea`, `ground` or `antenna`",
+      "type": "string",
+      "example": "sea",
+      "constraints": {
+        "pattern": "^(?=.*(?:sea|ground|antenna)).*$"
+      }
+    },
+    {
       "name": "u",
       "description": "Ground speed component west to east in m/s.",
       "type": "number",
