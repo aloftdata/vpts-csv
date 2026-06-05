@@ -237,7 +237,7 @@
     {
       "name": "radar_height",
       "description": "Height of the center of the radar antenna in m above sea level. Constant for all records from the same `radar`.",
-      "type": "integer",
+      "type": "number",
       "example": "519",
       "constraints": {
         "required": true,
