@@ -24,7 +24,7 @@
       "name": "height",
       "nameAlternatives": ["HGHT", "bin_lower"],
       "description": "Lower bound of the altitude bin in m above sea level.",
-      "type": "integer",
+      "type": "number",
       "example": "600",
       "constraints": {
         "required": true,
