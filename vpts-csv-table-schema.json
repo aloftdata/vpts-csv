@@ -23,7 +23,7 @@
     {
       "name": "height",
       "nameAlternatives": ["HGHT", "bin_lower"],
-      "description": "Lower bound of the altitude bin in m above sea level.",
+      "description": "Lower bound of the altitude bin in m, measured from `height_reference`.",
       "type": "number",
       "example": "600",
       "constraints": {
@@ -34,7 +34,7 @@
     },
     {
       "name": "height_reference",
-      "description": "Reference height relative to which the profile height bins are defined, one of `sea`, `ground` or `antenna`",
+      "description": "Reference for `height`. Height values can be in m above sea level (`\"sea\"`), ground level (`\"ground\"`) or antenna level (`\"antenna\"`).",
       "type": "string",
       "example": "sea",
       "constraints": {
