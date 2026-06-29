@@ -34,15 +34,15 @@
     },
     {
       "name": "height_reference",
-      "description": "Reference for `height`. Height values can be in m above sea level (`\"sea\"`), ground level (`\"ground\"`) or antenna level (`\"antenna\"`).",
+      "description": "Reference for `height`. `\"sea\"` and `\"antenna\"` are used for heights defined from mean sea level and radar antenna respectively, resulting in horizontal altitude bins. `\"terrain\"` is used for heights that are calculated relative to a digital elevation model for each pixel in the volume.",
       "type": "string",
       "example": "sea",
       "constraints": {
         "required": true,
         "enum": [
           "sea",
-          "ground",
-          "antenna"
+          "antenna",
+          "terrain"
         ]
       }
     },
