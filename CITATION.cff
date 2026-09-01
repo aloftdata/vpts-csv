@@ -19,6 +19,10 @@ authors:
     family-names: Dokter
     orcid: https://orcid.org/0000-0001-6573-066X
     affiliation: Cornell Lab of Ornithology
+  - given-names: Bart
+    family-names: Kranstauber
+    orcid: https://orcid.org/0000-0001-8303-780X
+    affiliation: University of Amsterdam (UvA)
 repository-code: https://github.com/aloftdata/vpts-csv
 url: https://aloftdata.eu/vpts-csv
 date-released: '2026-09-01'
