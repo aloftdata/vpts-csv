@@ -23,13 +23,27 @@
     {
       "name": "height",
       "nameAlternatives": ["HGHT", "bin_lower"],
-      "description": "Lower bound of the altitude bin in m above sea level.",
-      "type": "integer",
+      "description": "Lower bound of the altitude bin in m, measured from `height_reference`.",
+      "type": "number",
       "example": "600",
       "constraints": {
         "required": true,
         "minimum": -200,
         "maximum": 25000
+      }
+    },
+    {
+      "name": "height_reference",
+      "description": "Reference for `height`. `\"sea\"` and `\"antenna\"` are used for heights defined from mean sea level and radar antenna respectively, resulting in horizontal altitude bins. `\"terrain\"` is used for heights that are calculated relative to a digital elevation model for each pixel in the volume.",
+      "type": "string",
+      "example": "sea",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "sea",
+          "antenna",
+          "terrain"
+        ]
       }
     },
     {
@@ -228,7 +242,7 @@
     {
       "name": "radar_height",
       "description": "Height of the center of the radar antenna in m above sea level. Constant for all records from the same `radar`.",
-      "type": "integer",
+      "type": "number",
       "example": "519",
       "constraints": {
         "required": true,
